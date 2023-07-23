@@ -1,16 +1,42 @@
-body {
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    color: var(--main-cl);
-    background-color: #FFFFFF;
+/**
+  |============================
+  | Variables
+  |============================
+*/
+:root {
+    /* Fonts */
+    --primary-font: 'Raleway', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    /* Colors */
+    --main-cl: #434455;
+    --main-cl-60: rgba(17, 17, 17, 0.6);
+    --main-cl-70: rgba(17, 17, 17, 0.7);
+    --accent-cl: #fd9222;
+    --violet-cl: #1e1823;
+    --beige-cl: #fcf1e0;
+    --light-cl: #FFFFFF;
+    --gray-cl: #4c4c4c;
+    --white-cl: #ffffff;
+    --white-cl-70: rgba(255, 255, 255, 0.7);
 }
 
-:root {
-    --main-cl: #434455;
+/* ------------RESET------------- */
+
+body {
+    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
+    color: var(--main-cl);
+    background-color: var(--light-cl);
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
 }
 
 .link {
     text-decoration: none;
+    color: currentColor;
 }
 
 .list {
@@ -18,8 +44,12 @@ body {
 }
 
 .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
     margin: -1px;
     border: 0;
+    padding: 0;
 
     white-space: nowrap;
     clip-path: inset(100%);
@@ -27,7 +57,46 @@ body {
     overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* ------------RESET END------------- */
+
+/* ==============
+COMPONENT STYLES
+   ============== */
+
+.container {
+    width: 100%;
+    max-width: 1166px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
 /* ------------HEADER------------- */
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .header-logo {
     font-family: "Raleway", sans-serif;
     color: #4d5ae5;
@@ -101,6 +170,11 @@ body {
 /* ------------HERO------------- */
 .hero {
     background-color: #2E2F42;
+    margin-bottom: 120px;
+}
+
+.hero-wrap {
+    padding: 188px 316px 292px 316px;
 }
 
 .hero-title {
@@ -112,6 +186,8 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    max-width: 496px;
+    margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -142,6 +218,10 @@ body {
 }
 
 /* ------------PROJECT------------- */
+
+.project {
+    padding-right: 12px;
+}
 
 .project-subtitle {
     color: #2E2F42;
@@ -214,7 +294,7 @@ body {
 /* ------------FOOTER------------- */
 .footer {
     background-color: #2E2F42;
-    font-family: 'Raleway', sans-serif
+    font-family: 'Raleway', sans-serif;
 }
 
 .footer-text {
