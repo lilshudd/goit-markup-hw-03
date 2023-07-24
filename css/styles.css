@@ -255,7 +255,9 @@ COMPONENT STYLES
     gap: 24px;
 }
 
-.project-item {}
+.project-item {
+    width: calc((100% - 72px) / 4);
+}
 
 .project-subtitle {
     color: #2E2F42;
@@ -264,7 +266,7 @@ COMPONENT STYLES
     line-height: 120%;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .project-item-text {
