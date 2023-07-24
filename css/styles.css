@@ -121,12 +121,15 @@ COMPONENT STYLES
 .header-menu-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-soc-list {
     display: flex;
     gap: 40px;
+}
+
+.header-menu-item {
+    padding: 24px 0;
 }
 
 .syniu {
@@ -194,10 +197,6 @@ COMPONENT STYLES
     background-color: #2E2F42;
     margin-bottom: 120px;
     padding: 188px 0;
-}
-
-.hero-wrap {
-    padding: 188px 316px 292px 316px;
 }
 
 .hero-title {
