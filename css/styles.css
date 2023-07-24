@@ -87,10 +87,9 @@ COMPONENT STYLES
 
 .container {
     display: flex;
-    width: 100%;
     max-width: 1166px;
-    padding-left: 156px;
-    padding-right: 156px;
+    width: 1158px;
+    padding: 0 15px;
     margin: 0 auto;
     outline: 2px solid red;
 }
@@ -105,6 +104,7 @@ COMPONENT STYLES
 
 .header-navigation {
     display: flex;
+    align-items: center;
 }
 
 .header-logo {
@@ -115,6 +115,18 @@ COMPONENT STYLES
     line-height: 1.17;
     text-transform: uppercase;
     letter-spacing: 0.03em;
+    margin-right: 76px;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
+
+.header-soc-list {
+    display: flex;
+    gap: 40px;
 }
 
 .syniu {
@@ -181,6 +193,7 @@ COMPONENT STYLES
 .hero {
     background-color: #2E2F42;
     margin-bottom: 120px;
+    padding: 188px 0;
 }
 
 .hero-wrap {
