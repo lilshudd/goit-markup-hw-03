@@ -250,6 +250,11 @@ COMPONENT STYLES
     padding: 120px 0;
 }
 
+.project-list {
+    display: flex;
+    gap: 24px;
+}
+
 .project-item {}
 
 .project-subtitle {
