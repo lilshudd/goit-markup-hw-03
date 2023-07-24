@@ -200,6 +200,7 @@ COMPONENT STYLES
 }
 
 .hero-title {
+    display: flex;
     color: #FFFFFF;
     font-size: 56px;
     font-weight: 700;
