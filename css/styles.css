@@ -103,7 +103,9 @@ COMPONENT STYLES
     border-bottom: 1px solid #e7e9fc;
 }
 
-.header-navigation {}
+.header-navigation {
+    display: flex;
+}
 
 .header-logo {
     font-family: "Raleway", sans-serif;
