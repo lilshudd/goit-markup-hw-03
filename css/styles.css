@@ -87,6 +87,7 @@ COMPONENT STYLES
 
 .container {
     display: flex;
+    flex-direction: column;
     max-width: 1166px;
     width: 1158px;
     padding: 0 15px;
