@@ -292,6 +292,16 @@ COMPONENT STYLES
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
+}
+
+.dev-list {
+    display: flex;
+    gap: 24px;
+}
+
+.dev-photo {
+    width: calc((100% - 48px) / 3);
 }
 
 /* ------------TEAM------------- */
@@ -336,6 +346,7 @@ COMPONENT STYLES
 .footer {
     background-color: #2E2F42;
     font-family: 'Raleway', sans-serif;
+    padding: 100px 0;
 }
 
 .footer-text {
@@ -355,6 +366,8 @@ COMPONENT STYLES
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .syniu-dva {
