@@ -121,6 +121,7 @@ COMPONENT STYLES
 .header-menu-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .header-soc-list {
@@ -128,9 +129,7 @@ COMPONENT STYLES
     gap: 40px;
 }
 
-.header-menu-item {
-    padding: 24px 0;
-}
+.header-menu-item {}
 
 .syniu {
     color: #2e2f42;
