@@ -129,7 +129,9 @@ COMPONENT STYLES
     gap: 40px;
 }
 
-.header-menu-item {}
+.header-menu-item {
+    padding: 24px 0;
+}
 
 .syniu {
     color: #2e2f42;
