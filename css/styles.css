@@ -159,6 +159,7 @@ COMPONENT STYLES
     line-height: 150%;
     /* 24/16 */
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-link:first-child {
