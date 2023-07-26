@@ -431,6 +431,8 @@ COMPONENT STYLES
     color: #4d5ae5;
     background-color: #F4F4FD;
     border-radius: 4px;
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
 }
 
 .btn-buttons:hover {
