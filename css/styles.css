@@ -121,23 +121,14 @@ COMPONENT STYLES
 .header-menu-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-soc-list {
     display: flex;
     gap: 40px;
-
 }
 
-.header-menu-item {
-    padding: 24px 0;
-}
-
-.header-direction {
-    display: flex;
-    flex-direction: row;
-}
+.header-menu-item {}
 
 .syniu {
     color: #2e2f42;
