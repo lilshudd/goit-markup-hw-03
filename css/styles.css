@@ -92,7 +92,6 @@ COMPONENT STYLES
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
-    outline: 2px solid red;
 }
 
 /* ------------HEADER------------- */
@@ -464,4 +463,11 @@ COMPONENT STYLES
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+.sell-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px
 }
