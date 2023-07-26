@@ -94,6 +94,12 @@ COMPONENT STYLES
     margin: 0 auto;
 }
 
+.direction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* ------------HEADER------------- */
 
 .header {
