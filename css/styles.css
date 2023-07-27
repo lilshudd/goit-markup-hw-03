@@ -383,6 +383,7 @@ COMPONENT STYLES
 }
 
 .footer-logo {
+    display: inline-block;
     font-family: "Raleway", sans-serif;
     color: #4d5ae5;
     font-size: 18px;
