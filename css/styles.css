@@ -98,13 +98,13 @@ COMPONENT STYLES
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 24px 0;
 }
 
 /* ------------HEADER------------- */
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0;
 }
 
 .header-navigation {
