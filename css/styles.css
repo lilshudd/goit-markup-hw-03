@@ -396,6 +396,7 @@ COMPONENT STYLES
 }
 
 .syniu-dva {
+    display: inline-block;
     color: #f4f4fd;
 }
 
