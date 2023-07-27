@@ -289,7 +289,7 @@ COMPONENT STYLES
 /* ------------DEVICES------------- */
 
 .devices {
-    padding: 120px 0;
+    padding-bottom: 120px;
 }
 
 .dev-title {
