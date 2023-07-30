@@ -422,7 +422,7 @@ COMPONENT STYLES
     gap: 24px;
     margin-bottom: 72px;
     padding: 12px 24px;
-    border: 1px solid var(--border-cl);
+    /* border: 1px solid var(--border-cl); */
 }
 
 .portfolio-items {
