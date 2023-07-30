@@ -8,16 +8,18 @@
     --primary-font: 'Raleway', sans-serif;
     --secondary-font: 'Roboto', sans-serif;
     /* Colors */
-    --main-cl: #434455;
-    --main-cl-60: rgba(17, 17, 17, 0.6);
+
+    /* --main-cl-60: rgba(17, 17, 17, 0.6);
     --main-cl-70: rgba(17, 17, 17, 0.7);
-    --accent-cl: #fd9222;
-    --violet-cl: #1e1823;
-    --beige-cl: #fcf1e0;
-    --light-cl: #FFFFFF;
-    --gray-cl: #4c4c4c;
-    --white-cl: #ffffff;
-    --white-cl-70: rgba(255, 255, 255, 0.7);
+    --white-cl-70: rgba(255, 255, 255, 0.7); */
+
+    --main-cl: #434455;
+    --white-cl: #FFFFFF;
+    --white-cl-dark: #F4F4FD;
+    --border-cl: #e7e9fc;
+    --blue-cl: #404BBF;
+    --blue-cl-light: #4d5ae5;
+    --gray-cl: #2e2f42;
 }
 
 /* ------------RESET------------- */
@@ -90,9 +92,6 @@ COMPONENT STYLES
    ============== */
 
 .container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1166px;
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -100,14 +99,13 @@ COMPONENT STYLES
 
 .direction {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 /* ------------HEADER------------- */
 
 .header {
-    border-bottom: 1px solid #e7e9fc;
+    border-bottom: 1px solid var(--border-cl);
 }
 
 .header-navigation {
@@ -117,7 +115,7 @@ COMPONENT STYLES
 
 .header-logo {
     font-family: "Raleway", sans-serif;
-    color: #4d5ae5;
+    color: var(--blue-cl-light);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -129,13 +127,11 @@ COMPONENT STYLES
 .header-menu-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-soc-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0;
 }
 
 .header-menu-item {
@@ -143,11 +139,11 @@ COMPONENT STYLES
 }
 
 .syniu {
-    color: #2e2f42;
+    color: var(--gray-cl);
 }
 
 .header-link {
-    color: #2E2F42;
+    color: var(--gray-cl);
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -156,7 +152,7 @@ COMPONENT STYLES
 }
 
 .header-soc-link {
-    color: #434455;
+    color: var(--main-cl);
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -165,37 +161,40 @@ COMPONENT STYLES
 }
 
 .header-link:first-child {
-    color: #2E2F42;
+    color: var(--gray-cl);
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
     /* 24/16 */
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-soc-link:first-child {
-    color: #434455;
+    display: block;
+    color: var(--main-cl);
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
     /* 24/16 */
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-soc-link:first-child:hover {
-    color: #404bbf;
+    color: var(--blue-cl);
 }
 
 .header-soc-link:first-child:focus {
-    color: #404bbf;
+    color: var(--blue-cl);
 }
 
 .header-link:first-child:hover {
-    color: #404bbf;
+    color: var(--blue-cl);
 }
 
 .header-link:first-child:focus {
-    color: #404bbf;
+    color: var(--blue-cl);
 }
 
 .address {
@@ -204,12 +203,12 @@ COMPONENT STYLES
 
 /* ------------HERO------------- */
 .hero {
-    background-color: #2E2F42;
+    background-color: var(--gray-cl);
     padding: 188px 0;
 }
 
 .hero-title {
-    color: #FFFFFF;
+    color: var(--white-cl);
     font-size: 56px;
     font-weight: 700;
     line-height: 107.142857%;
@@ -224,13 +223,14 @@ COMPONENT STYLES
 }
 
 .hero-btn {
+    display: block;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #ffffff;
-    background-color: #4D5AE5;
+    color: var(--white-cl);
+    background-color: var(--blue-cl-light);
     cursor: pointer;
     min-width: 169px;
     height: 56px;
@@ -238,18 +238,19 @@ COMPONENT STYLES
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+    margin: 0 auto;
 }
 
 .hero-btn:hover {
-    background-color: #404BBF;
+    background-color: var(--blue-cl);
 }
 
 .hero-btn:focus {
-    background-color: #404BBF
+    background-color: var(--blue-cl);
 }
 
 .btn-txt {
-    color: white;
+    color: var(--white-cl);
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -273,7 +274,7 @@ COMPONENT STYLES
 }
 
 .project-subtitle {
-    color: #2E2F42;
+    color: var(--gray-cl);
     font-size: 20px;
     font-weight: 500;
     line-height: 120%;
@@ -283,7 +284,7 @@ COMPONENT STYLES
 }
 
 .project-item-text {
-    color: #434455;
+    color: var(--main-cl);
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -297,7 +298,7 @@ COMPONENT STYLES
 }
 
 .dev-title {
-    color: #2E2F42;
+    color: var(--gray-cl);
     font-size: 36px;
     font-weight: 700;
     line-height: 111.111111%;
@@ -321,12 +322,12 @@ COMPONENT STYLES
 
 
 .team {
-    background-color: #F4F4FD;
+    background-color: var(--white-cl-dark);
     padding: 120px 0;
 }
 
 .team-title {
-    color: #2E2F42;
+    color: var(--gray-cl);
     font-size: 36px;
     font-weight: 700;
     line-height: 111.111111%;
@@ -342,13 +343,13 @@ COMPONENT STYLES
 }
 
 .team-item {
-    background-color: #FFFFFF;
+    background-color: var(--white-cl);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 
 .team-subtitle {
-    color: #2E2F42;
+    color: var(--gray-cl);
     font-size: 20px;
     font-weight: 500;
     line-height: 120%;
@@ -359,7 +360,7 @@ COMPONENT STYLES
 }
 
 .team-item-text {
-    color: #434455;
+    color: var(--main-cl);
     font-size: 16px;
     font-weight: 400;
     line-height: 150%;
@@ -373,14 +374,14 @@ COMPONENT STYLES
 
 /* ------------FOOTER------------- */
 .footer {
-    background-color: #2E2F42;
+    background-color: var(--gray-cl);
     font-family: 'Raleway', sans-serif;
     padding: 100px 0;
 }
 
 .footer-text {
     font-family: 'Roboto', sans-serif;
-    color: #F4F4FD;
+    color: var(--white-cl-dark);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
@@ -390,7 +391,7 @@ COMPONENT STYLES
 .footer-logo {
     display: inline-block;
     font-family: "Raleway", sans-serif;
-    color: #4d5ae5;
+    color: var(--blue-cl-light);
     font-size: 18px;
     font-weight: 800;
     line-height: 1.17;
@@ -401,7 +402,7 @@ COMPONENT STYLES
 
 .syniu-dva {
     display: inline-block;
-    color: #f4f4fd;
+    color: var(--white-cl-dark);
 }
 
 /* ------------Portfolio------------- */
@@ -421,7 +422,7 @@ COMPONENT STYLES
     gap: 24px;
     margin-bottom: 72px;
     padding: 12px 24px;
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--border-cl);
 }
 
 .portfolio-items {
@@ -442,22 +443,22 @@ COMPONENT STYLES
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: #4d5ae5;
-    background-color: #F4F4FD;
+    color: var(--blue-cl-light);
+    background-color: var(--white-cl-dark);
     border-radius: 4px;
     padding: 12px 24px;
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--border-cl);
 }
 
 .btn-buttons:hover {
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--white-cl);
+    background-color: var(--blue-cl);
     border: 1px solid transparent;
 }
 
 .btn-buttons:focus {
-    color: #FFFFFF;
-    background-color: #404BBF;
+    color: var(--white-cl);
+    background-color: var(--blue-cl);
     border: 1px solid transparent;
 }
 
@@ -470,7 +471,7 @@ COMPONENT STYLES
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: var(--gray-cl);
     margin-bottom: 8px;
 }
 
@@ -478,11 +479,11 @@ COMPONENT STYLES
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--main-cl);
 }
 
 .sell-container {
     padding: 32px 16px;
-    border: 1px solid #e7e9fc;
+    border: 1px solid var(--border-cl);
     border-top: none;
 }
