@@ -38,6 +38,10 @@ img {
     display: block;
 }
 
+footer {
+    display: block;
+}
+
 .link {
     text-decoration: none;
     color: currentColor;
